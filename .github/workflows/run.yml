@@ -20,10 +20,10 @@ jobs:
             # - uses: actions/checkout@master
             # - run: npm ci
             - run: npx github-stats-box@1
-env:
+              env:
                   GH_TOKEN: ${{ secrets.GH_TOKEN }} # Do not edit, defined in secrets
 
                   # Edit the following environment variables
-                  GIST_ID: ${{ secrets.GH_ID }}
+                  GIST_ID: 1d1d4ac4a8d737ca1a7237603adaf1bf # The ID portion from your gist url
                   ALL_COMMITS: true # If `true` it will count all commits, if `false` it will count your last year commits
-                  K_FORMAT: true # If `true`, large numbers will be formatted with a "k", for example "1.5k"
+                  K_FORMAT: true # If `true`, large numbers will be formatted with a "k", for example "1.5k"
